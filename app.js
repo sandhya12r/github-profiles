@@ -15,7 +15,6 @@ async function getUser(username) {
         }
     }
 }
-
 //getUser('Atul')
 
 async function getRepos(username) {
@@ -42,7 +41,7 @@ function createUserCard(user) {
             <li>${user.public_repos} <strong>Repositories</strong></li>
         </ul>
         <div class="repos">
-
+            
         </div>
     </div>
     </div>`
@@ -51,7 +50,7 @@ function createUserCard(user) {
 }
 
 function createErrorCard(msg) {
-    const cardHTML =`
+    const cardHTML = `
         <div class="card">
             <h1>${msg}</h1>
         </div>`
@@ -73,7 +72,7 @@ function addReposToCard(repos) {
         })
 }
 
-form.addEventListener('submit', (e) =>{
+form.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const user = search.value
