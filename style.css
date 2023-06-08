@@ -9,8 +9,7 @@ body{
     overflow: hidden;
     margin: 0;
 }
-
-.userForm input{
+.user-form input{
     width: 100%;
     display: block;
     background-color: #4c2885;
@@ -23,12 +22,10 @@ body{
     box-shadow: 0 5px 10px rgba(154, 160,185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
 
 }
-
-.userForm input::placeholder{
+.user-form input::placeholder{
     color: #bbb;
 }
-
-.userForm input:focus{
+.user-form input:focus{
     outline: none;
 }
 
@@ -48,15 +45,15 @@ body{
     margin: 0 1.5rem;
 }
 
-.userInfo{
+.user-info{
     padding-left: 2rem;
 }
 
-.userInfo h2{
+.user-info h2{
     margin-top: 0;
 }
 
-.userInfo ul{
+.user-info ul{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -64,12 +61,12 @@ body{
     max-width: 400px;
 }
 
-.userInfo ul li{
+.user-info ul li{
     display: flex;
     align-items: center;
 }
 
-.userInfo ul li strong{
+.user-info ul li strong{
     font-size: 0.9rem;
     margin-left: 0.5rem;
 }
