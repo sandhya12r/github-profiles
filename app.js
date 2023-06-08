@@ -11,7 +11,7 @@ async function getUser(username) {
         getRepos(username)
     } catch (err) {
         if (err.response.status == 404) {
-            createErrorCard("No Profile Found..")
+            createErrorCard("No Profile Found with this username..")
         }
     }
 }
@@ -19,6 +19,7 @@ async function getUser(username) {
 
 async function getRepos(username) {
     try {
+        console.log(username)
         const { data } = await axios(APIURL + username + '/repo?sort=created')
         addReposToCard(data)
     } catch (err) {
@@ -46,7 +47,7 @@ function createUserCard(user) {
     </div>
     </div>`
 
-    main.innerHTML = cardHTML
+    main.innerHTML = cardHTML;
 }
 
 function createErrorCard(msg) {
