@@ -44,8 +44,12 @@ body{
     background-color: #4c2885;
     border-radius: 20px;
     display: flex;
-    padding: 3rem;
+    padding: 2rem;
     margin: 0 1.5rem;
+}
+
+.userInfo{
+    padding-left: 2rem;
 }
 
 .userInfo h2{
