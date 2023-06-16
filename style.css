@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgba(137, 43, 226, 0.568);
     color: white;
     display: flex;
@@ -9,7 +9,13 @@ body{
     overflow: hidden;
     margin: 0;
 }
-.user-form input{
+
+.user-form {
+    width: 100%;
+    max-width: 700px;
+}
+
+.user-form input {
     width: 100%;
     display: block;
     background-color: #4c2885;
@@ -19,24 +25,26 @@ body{
     color: white;
     margin-bottom: 2rem;
     font-size: 1rem;
-    box-shadow: 0 5px 10px rgba(154, 160,185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
 
 }
-.user-form input::placeholder{
+
+.user-form input::placeholder {
     color: #bbb;
 }
-.user-form input:focus{
+
+.user-form input:focus {
     outline: none;
 }
 
-.avatar{
+.avatar {
     border-radius: 50%;
     border: 10px solid rgba(137, 43, 226, 0.568);
     height: 150px;
     width: 150px;
 }
 
-.card{
+.card {
     max-width: 800px;
     background-color: #4c2885;
     border-radius: 20px;
@@ -45,15 +53,15 @@ body{
     margin: 0 1.5rem;
 }
 
-.user-info{
+.user-info {
     padding-left: 2rem;
 }
 
-.user-info h2{
+.user-info h2 {
     margin-top: 0;
 }
 
-.user-info ul{
+.user-info ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -61,17 +69,17 @@ body{
     max-width: 400px;
 }
 
-.user-info ul li{
+.user-info ul li {
     display: flex;
     align-items: center;
 }
 
-.user-info ul li strong{
+.user-info ul li strong {
     font-size: 0.9rem;
     margin-left: 0.5rem;
 }
 
-.repo{
+.repo {
     text-decoration: none;
     color: white;
     background-color: #2a2a72;
